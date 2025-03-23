@@ -107,3 +107,38 @@
     }
   }
   
+
+
+  @keyframes fadeUp {
+    0% {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .fade-up {
+    animation: fadeUp 1.5s ease-out forwards;
+    opacity: 0;
+  }
+  
+
+  /* For sun image (needs translateX(-50%) to stay centered) */
+@keyframes fadeUpCentered {
+    0% {
+      transform: translateY(160px) translateX(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) translateX(-50%);
+      opacity: 1;
+    }
+  }
+  
+  .fade-up-centered {
+    animation: fadeUpCentered 1.8s ease-out forwards;
+    opacity: 0;
+  }
